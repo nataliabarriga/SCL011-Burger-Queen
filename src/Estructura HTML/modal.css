@@ -1,0 +1,85 @@
+body{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* CONTENEDOR DE TODOS LOS COMPONENTES */
+.root{
+    width: 100%;
+    height: 768px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+/* CONTENEDOR DEL MODAL */
+.containerModal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.infoModal{
+    width: 400px;
+    height: 470px;
+    top:120px;
+   left: 300px;
+    padding: 0 30px 30px 30px;
+    border-radius: 20px;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgMenuModal{
+    height: 60%;
+    margin: 0;
+}
+
+.questionModal{
+    font-size: 24px;
+    font-weight: 600;
+    color: #0061BF;
+    margin-bottom: 30px;
+}
+
+/* CONTENEDOR DE BOTONES */
+.containerButtons{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BOTONES DE PROTEINA */
+.proteinBtnModal{
+    width: 60px;
+    height: 60px;
+    background-color: #FD7D00;
+    border: 2px solid white;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.proteinBtnModal:hover{
+    background-color: #FFCC00;
+    border: 3px solid #232323;
+    color:#232323;
+}
