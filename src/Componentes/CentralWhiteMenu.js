@@ -13,7 +13,6 @@ class Buttons extends Component{
     }
 }
 
-
 class Container extends Component{
     state ={
         menu : Data
