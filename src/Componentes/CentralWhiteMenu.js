@@ -13,6 +13,7 @@ class Buttons extends Component{
     }
 }
 
+
 class Container extends Component{
     state ={
         menu : Data
@@ -26,5 +27,25 @@ class Container extends Component{
     }
 }
 
+/* Función de botones con la ruta (hay que probarlo) */
+
+// function Buttons(){
+//     return(
+//         <Router>
+//             <div className="containerButtons">
+//             <button className="btn">
+//                 <Link to={}></Link>
+//                 Desayuno
+//             </button>
+//             <button className="btn">
+//                 <Link to={}></Link>
+//                 Almuerzo
+//             </button>
+//             </div>
+
+//             <Route path={} component={}/>
+//         </Router>
+//     )
+// }
 
 export default Container;
