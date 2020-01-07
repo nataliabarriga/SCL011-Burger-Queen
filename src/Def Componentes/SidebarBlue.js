@@ -3,43 +3,8 @@
 
 import React, {Component} from 'react';
 import './SidebarBlue.css';
-import dataBase from "../firebaseConfig.js"
 
 class BlueSidebar extends Component {
-
-       state={
-        orders:[],
-        inputName:"",
-        inputNumber:"",
-    }
-
-    componentDidMount(){
-        dataBase.collection("customersAndOrders").get()
-        .then((snapShots) => {
-            this.setState({
-                orders:snapShots.docs.map(doc => {
-                    return {id:doc.id, data:doc.data()}
-                })
-            })
-        }), error => {console.log(error)}
-    }
-
-    changeValue = (e) =>{
-        this.setState({
-            inputName: e.target.value
-        })
-    }
-
-    action = ()=>{
-        const {inputValue} = this.state;
-        dataBase.collection("customersAndOrders").add({
-            Order:inputValue
-        }).then(()=>{
-            console.log("Agregado");
-        }).catch(() => {
-            console.log("error");
-        })
-    }
 
     render(){
         return(
