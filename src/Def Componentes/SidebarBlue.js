@@ -5,6 +5,7 @@ import React, {Component} from 'react';
 import './SidebarBlue.css';
 import Inputs from "./InputsOrder.js";
 
+
 class BlueSidebar extends Component {
 
     render(){
